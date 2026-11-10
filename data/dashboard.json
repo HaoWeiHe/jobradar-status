@@ -1,0 +1,319 @@
+{
+ "generated_at": "2026-11-10T16:04:07+08:00",
+ "schedule": {
+  "cron_local": "每天 09:00（台北時間）",
+  "hour": 9,
+  "minute": 0
+ },
+ "baseline_at": "2026-11-06T11:25:56+08:00",
+ "health": {
+  "last_attempt_at": "2026-11-10T16:03:51+08:00",
+  "last_success_at": "2026-11-10T16:03:51+08:00",
+  "consecutive_failures": 0
+ },
+ "pending_alerts": 0,
+ "latest": {
+  "scanned_at": "2026-11-10T16:03:51+08:00",
+  "status": "ok",
+  "sources": [
+   {
+    "id": "cpc_n32",
+    "name": "中油 就業資訊",
+    "url": "https://www.cpc.com.tw/OpenData.aspx?SN=FCC220F41EEE0856",
+    "page": "https://www.cpc.com.tw/News.aspx?n=32",
+    "ok": true,
+    "http_status": 200,
+    "elapsed_s": 2.81,
+    "error": null,
+    "items": 7
+   }
+  ],
+  "baseline_run": false,
+  "findings": [],
+  "items": [
+   {
+    "key": "cpc_n32:112413",
+    "news_id": "112413",
+    "title": "【職員】經濟部所屬事業機構115年將招考589名新進職員，歡迎有志人士踴躍報考",
+    "url": "https://www.cpc.com.tw/News_Content.aspx?n=32&s=112413",
+    "published": "2026-06-18",
+    "category": "recruitment_campaign",
+    "category_label": "招募公告",
+    "window": {
+     "start": "2026-06-25",
+     "end": "2026-07-13"
+    },
+    "status": "active",
+    "attachments": 1,
+    "first_seen_at": "2026-11-06T11:25:56+08:00",
+    "removed_at": null,
+    "decision": {
+     "at": "2026-11-06T11:25:56+08:00",
+     "change_type": null,
+     "notify": false,
+     "reason_code": "window_closed",
+     "reason": "報名已截止",
+     "detail": null
+    },
+    "this_scan": null
+   },
+   {
+    "key": "cpc_n32:827",
+    "news_id": "827",
+    "title": "加油站工讀生招募",
+    "url": "https://www.cpc.com.tw/News_Content.aspx?n=32&s=827",
+    "published": "2014-04-21",
+    "category": "part_time",
+    "category_label": "工讀／常設職缺連結",
+    "window": {
+     "start": null,
+     "end": null
+    },
+    "status": "active",
+    "attachments": 0,
+    "first_seen_at": "2026-11-06T11:25:56+08:00",
+    "removed_at": null,
+    "decision": {
+     "at": "2026-11-06T11:25:56+08:00",
+     "change_type": null,
+     "notify": false,
+     "reason_code": "category_part_time",
+     "reason": "常設工讀連結，非新招募",
+     "detail": null
+    },
+    "this_scan": null
+   },
+   {
+    "key": "cpc_n32:824",
+    "news_id": "824",
+    "title": "歷年新進僱用人員甄試簡章",
+    "url": "https://www.cpc.com.tw/News_Content.aspx?n=32&s=824",
+    "published": "2014-04-14",
+    "category": "archive_guidelines",
+    "category_label": "歷年簡章彙整",
+    "window": {
+     "start": null,
+     "end": null
+    },
+    "status": "active",
+    "attachments": 15,
+    "first_seen_at": "2026-11-06T11:25:56+08:00",
+    "removed_at": null,
+    "decision": {
+     "at": "2026-11-06T11:25:56+08:00",
+     "change_type": null,
+     "notify": false,
+     "reason_code": "category_archive_guidelines",
+     "reason": "歷年簡章彙整（舊資料）",
+     "detail": null
+    },
+    "this_scan": null
+   },
+   {
+    "key": "cpc_n32:825",
+    "news_id": "825",
+    "title": "歷年新進博士級人員甄試簡章",
+    "url": "https://www.cpc.com.tw/News_Content.aspx?n=32&s=825",
+    "published": "2014-04-14",
+    "category": "archive_guidelines",
+    "category_label": "歷年簡章彙整",
+    "window": {
+     "start": null,
+     "end": null
+    },
+    "status": "active",
+    "attachments": 5,
+    "first_seen_at": "2026-11-06T11:25:56+08:00",
+    "removed_at": null,
+    "decision": {
+     "at": "2026-11-07T01:19:18+08:00",
+     "change_type": "attachments_added",
+     "detail": "新增附件：102年新進博士級人員甄試簡章",
+     "notify": false,
+     "reason": "歷年彙整補上舊年度檔案",
+     "reason_code": "archive_backfill"
+    },
+    "this_scan": null
+   },
+   {
+    "key": "cpc_n32:826",
+    "news_id": "826",
+    "title": "歷年新進博士級人員甄試試題",
+    "url": "https://www.cpc.com.tw/News_Content.aspx?n=32&s=826",
+    "published": "2014-04-14",
+    "category": "past_exam_questions",
+    "category_label": "歷年試題",
+    "window": {
+     "start": null,
+     "end": null
+    },
+    "status": "active",
+    "attachments": 5,
+    "first_seen_at": "2026-11-06T11:25:56+08:00",
+    "removed_at": null,
+    "decision": {
+     "at": "2026-11-06T11:25:56+08:00",
+     "change_type": null,
+     "notify": false,
+     "reason_code": "category_past_exam_questions",
+     "reason": "歷年試題",
+     "detail": null
+    },
+    "this_scan": null
+   },
+   {
+    "key": "cpc_n32:4796",
+    "news_id": "4796",
+    "title": "新進人員體格檢查表1150205修訂、租屋合約注意事項",
+    "url": "https://www.cpc.com.tw/News_Content.aspx?n=32&s=4796",
+    "published": null,
+    "category": "onboarding_form",
+    "category_label": "新進人員表單",
+    "window": {
+     "start": null,
+     "end": null
+    },
+    "status": "active",
+    "attachments": 2,
+    "first_seen_at": "2026-11-06T11:25:56+08:00",
+    "removed_at": null,
+    "decision": {
+     "at": "2026-11-06T11:25:56+08:00",
+     "change_type": null,
+     "notify": false,
+     "reason_code": "category_onboarding_form",
+     "reason": "新進人員表單，非招募",
+     "detail": null
+    },
+    "this_scan": null
+   },
+   {
+    "key": "cpc_n32:844",
+    "news_id": "844",
+    "title": "經濟部所屬事業機構歷年新進職員甄試試題解答",
+    "url": "https://www.cpc.com.tw/News_Content.aspx?n=32&s=844",
+    "published": null,
+    "category": "past_exam_questions",
+    "category_label": "歷年試題",
+    "window": {
+     "start": null,
+     "end": null
+    },
+    "status": "active",
+    "attachments": 0,
+    "first_seen_at": "2026-11-06T11:25:56+08:00",
+    "removed_at": null,
+    "decision": {
+     "at": "2026-11-06T11:25:56+08:00",
+     "change_type": null,
+     "notify": false,
+     "reason_code": "category_past_exam_questions",
+     "reason": "歷年試題",
+     "detail": null
+    },
+    "this_scan": null
+   }
+  ],
+  "alerts": [],
+  "monitoring_notice": null,
+  "counts": {
+   "items": 7,
+   "relevant": 7,
+   "notify": 0
+  },
+  "summary_text": "11/10 16:03 已成功檢查 1 個來源。找到 7 則相關公告，其中 0 則屬於新招募或重要更新；因此沒有發通知。"
+ },
+ "history": [
+  {
+   "scanned_at": "2026-11-10T16:03:51+08:00",
+   "status": "ok",
+   "baseline_run": false,
+   "counts": {
+    "items": 7,
+    "relevant": 7,
+    "notify": 0
+   },
+   "sources": {
+    "cpc_n32": true
+   },
+   "alerts": [],
+   "summary_text": "11/10 16:03 已成功檢查 1 個來源。找到 7 則相關公告，其中 0 則屬於新招募或重要更新；因此沒有發通知。"
+  },
+  {
+   "scanned_at": "2026-11-09T15:43:19+08:00",
+   "status": "ok",
+   "baseline_run": false,
+   "counts": {
+    "items": 7,
+    "relevant": 7,
+    "notify": 0
+   },
+   "sources": {
+    "cpc_n32": true
+   },
+   "alerts": [],
+   "summary_text": "11/09 15:43 已成功檢查 1 個來源。找到 7 則相關公告，其中 0 則屬於新招募或重要更新；因此沒有發通知。"
+  },
+  {
+   "scanned_at": "2026-11-08T14:58:23+08:00",
+   "status": "ok",
+   "baseline_run": false,
+   "counts": {
+    "items": 7,
+    "relevant": 7,
+    "notify": 0
+   },
+   "sources": {
+    "cpc_n32": true
+   },
+   "alerts": [],
+   "summary_text": "11/08 14:58 已成功檢查 1 個來源。找到 7 則相關公告，其中 0 則屬於新招募或重要更新；因此沒有發通知。"
+  },
+  {
+   "scanned_at": "2026-11-07T14:52:31+08:00",
+   "status": "ok",
+   "baseline_run": false,
+   "counts": {
+    "items": 7,
+    "relevant": 7,
+    "notify": 0
+   },
+   "sources": {
+    "cpc_n32": true
+   },
+   "alerts": [],
+   "summary_text": "11/07 14:52 已成功檢查 1 個來源。找到 7 則相關公告，其中 0 則屬於新招募或重要更新；因此沒有發通知。"
+  },
+  {
+   "scanned_at": "2026-11-07T01:19:18+08:00",
+   "status": "ok",
+   "baseline_run": false,
+   "counts": {
+    "items": 7,
+    "relevant": 7,
+    "notify": 0
+   },
+   "sources": {
+    "cpc_n32": true
+   },
+   "alerts": [],
+   "summary_text": "11/07 01:19 已成功檢查 1 個來源。找到 7 則相關公告，其中 0 則屬於新招募或重要更新；因此沒有發通知。"
+  },
+  {
+   "scanned_at": "2026-11-06T11:25:56+08:00",
+   "status": "ok",
+   "baseline_run": true,
+   "counts": {
+    "items": 7,
+    "relevant": 7,
+    "notify": 0
+   },
+   "sources": {
+    "cpc_n32": true
+   },
+   "alerts": [],
+   "summary_text": "11/06 11:25 首次掃描：已檢查 1 個來源，記錄 7 則公告作為基準。首次掃描不發通知，之後只通知新招募或重要更新。"
+  }
+ ],
+ "sent": []
+}

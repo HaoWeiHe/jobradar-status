@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Job Radar 監控狀態</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">JOB RADAR <span>／ 職缺觀測站</span></div>
+  <nav class="nav">
+    <a href="#status">監控狀態</a><a href="#recent">最新招募</a><a href="#about">使用說明</a>
+  </nav>
+</header>
+
+<main>
+  <section id="status" class="card status" aria-live="polite">
+    <p class="muted">讀取中…</p>
+  </section>
+
+  <section id="rules" class="card">
+    <h2>目前規則</h2>
+    <p><strong>所有中油正式招募</strong>（無個人篩選，所有好友收到相同通知）</p>
+    <details>
+      <summary>哪些會通知、哪些不會</summary>
+      <ul class="rules">
+        <li class="yes">新的中油招考／甄試公告（含經濟部聯招）</li>
+        <li class="yes">歷年簡章彙整出現新年度簡章（例如中油僱用人員甄試）</li>
+        <li class="yes">進行中招募的新簡章，或報名期間變更</li>
+        <li class="no">一般新聞、歷年簡章與試題、錄取名單、新進人員表單、工讀生連結</li>
+        <li class="no">已截止的招募、文字小修改、重複公告</li>
+      </ul>
+      <p class="muted">報名日期只採用官方公告寫明的日期，找不到就顯示「待官方公告」，不猜測。</p>
+    </details>
+  </section>
+
+  <section id="sources" class="card">
+    <h2>官方來源</h2>
+    <ul id="source-list" class="sources"></ul>
+  </section>
+
+  <section id="recent" class="card">
+    <h2>最新招募與公告</h2>
+    <p class="muted">Job Radar 會逐步接入更多公司的官方招募來源。<strong>目前此頁提供的是台灣中油的官方招募公告與更新</strong>，不是個人專屬推薦；報名請以官方公告為準。</p>
+    <p id="recent-state" class="muted" role="status" aria-live="polite">讀取公告中…</p>
+    <div id="items"></div>
+    <h3>最近的通知</h3>
+    <ul id="sent" class="plain"></ul>
+    <h3>掃描紀錄</h3>
+    <ul id="history" class="plain history"></ul>
+  </section>
+
+  <section id="about" class="card guide-page">
+    <div class="guide-heading">
+      <span class="guide-rooster" aria-hidden="true">🐓</span>
+      <div>
+        <h2>主要入口：我的職缺雷達</h2>
+        <p class="muted">最新招募、為你推薦及追蹤公司，都從「職缺雷達」查看。</p>
+      </div>
+    </div>
+
+    <p class="guide-scope"><strong>想看招募消息？</strong>回到 LINE 聊天室，點選下方深綠色的「開啟職缺雷達」。開啟後會直接看到「最新招募」，也可以切換「為你推薦」及管理追蹤公司。<a href="https://liff.line.me/2012440045-DDPzWVSh">直接開啟職缺雷達</a></p>
+
+    <ol class="guide-cards" aria-label="開始使用的三個步驟">
+      <li class="guide-card">
+        <span class="guide-step">
+          <span class="guide-step-label">STEP 1</span>
+          <span class="guide-eggs" aria-hidden="true"><i class="guide-egg"></i></span>
+        </span>
+        <div><strong>開啟職缺雷達</strong>
+          <p>點選 LINE 下方深綠色的「開啟職缺雷達」，這裡才是查看消息的主要入口。</p>
+        </div>
+      </li>
+      <li class="guide-card">
+        <span class="guide-step">
+          <span class="guide-step-label">STEP 2</span>
+          <span class="guide-eggs" aria-hidden="true"><i class="guide-egg"></i><i class="guide-egg"></i></span>
+        </span>
+        <div><strong>瀏覽最新招募與推薦</strong>
+          <p>一進去就能查看官方「最新招募」，包含已截止並標示狀態的真實紀錄；也能切換「為你推薦」。</p>
+        </div>
+      </li>
+      <li class="guide-card">
+        <span class="guide-step">
+          <span class="guide-step-label">STEP 3</span>
+          <span class="guide-eggs" aria-hidden="true"><i class="guide-egg"></i><i class="guide-egg"></i><i class="guide-egg"></i></span>
+        </span>
+        <div><strong>追蹤公司、管理通知</strong>
+          <p>追蹤感興趣的公司；在「設定」調整求職偏好和 LINE 通知選項。個人 LINE 新職缺通知目前尚未開放發送，瀏覽不受影響。</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="guide-scope">目前先從<strong>台灣中油</strong>開始，更多公司將陸續加入。</p>
+    <p class="guide-note">「使用說明」是操作指南，不是職缺清單；想看消息請開啟「職缺雷達」。目前以台灣中油的官方招募資訊為主，個人 LINE 新職缺通知尚未開放實際發送；聊天視窗不提供職缺查詢。</p>
+
+    <nav class="guide-links" aria-label="延伸資訊">
+      <a href="#faq">常見問題</a>
+      <a href="#privacy">資料與隱私</a>
+    </nav>
+  </section>
+
+  <section id="faq" class="card guide-secondary">
+    <a class="guide-back" href="#about">返回使用說明</a>
+    <h2>常見問題</h2>
+    <details>
+      <summary>目前可以追蹤哪些公司？</summary>
+      <p>目前先從台灣中油開始；其他公司會在確認官方招募來源後陸續加入。</p>
+    </details>
+    <details>
+      <summary>為什麼沒有收到 LINE 提醒？</summary>
+      <p>我們會在有重要招募更新時發送提醒，並不是每天都會傳訊息。你也可以隨時點「最新招募」查看公告。</p>
+    </details>
+    <details>
+      <summary>我選了公司，就會收到專屬通知嗎？</summary>
+      <p>目前大家收到的是相同的中油公開招募提醒；依個人追蹤公司發送通知的功能尚未推出。</p>
+    </details>
+    <details>
+      <summary>可以在聊天室直接詢問職缺嗎？</summary>
+      <p>目前還不行。請使用聊天室下方的「我的職缺雷達」或「最新招募」選單。</p>
+    </details>
+  </section>
+
+  <section id="privacy" class="card guide-secondary">
+    <a class="guide-back" href="#about">返回使用說明</a>
+    <h2>資料與隱私</h2>
+    <p>目前會員功能採邀請測試。你可以先選追蹤公司，不必上傳求職文件。</p>
+    <h3>你的資料，由你決定</h3>
+    <p>上傳求職文件完全自願，保存前會先徵求同意。你可以在會員頁管理同意、刪除文件或刪除帳號。</p>
+    <h3>關於使用與提醒</h3>
+    <p>目前不會把你的求職文件送交外部 AI 分析。請透過會員頁管理資料，不要直接在 LINE 聊天室傳送個人敏感資訊。現階段 LINE 提醒也尚未依個人追蹤公司分別發送。</p>
+    <h3>官方資訊</h3>
+    <p>Job Radar 是獨立的招募資訊整理服務，非台灣中油官方。最終條件和報名日期，請以<a href="https://www.cpc.com.tw/News.aspx?n=32" rel="noopener">中油官方就業資訊</a>為準。服務不保證公告即時送達或求職結果。</p>
+  </section>
+</main>
+
+<footer class="muted" id="footer"></footer>
+<script src="app.js"></script>
+</body>
+</html>
